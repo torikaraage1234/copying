@@ -184,6 +184,7 @@ footer {
   display: inline;
   text-align: center;
   border-bottom: none;
+  width: auto;
 }
 
 .nav_left {
@@ -195,10 +196,7 @@ footer {
 
 .nav_left a {
   width: 100%;
-  margin-left: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .nav_right {
@@ -208,7 +206,7 @@ footer {
 
 .sm_nav {
   display: inline;
-  font-size: max(15px);
+  font-size: 15px;
 }
 
 .pc_nav {
@@ -221,14 +219,14 @@ footer {
   margin-bottom: 10px;
 }
 .section {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline;
 }
 
 /* カラム左設定 */
 .section_left {
   width: 100%;
-  margin: 0;
+  padding-left: 15px;
+  margin: 0 auto;
 }
 
 .section_left img {
@@ -284,7 +282,7 @@ footer {
 }
 
 .number {
-  width: 300px;
+  width: auto;
   font-size: 30px;
 }
 
