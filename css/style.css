@@ -1,0 +1,327 @@
+/* 共通 */
+*{
+  margin: 0 auto;
+}
+
+body {
+  max-width: 1000px;
+  font-family: 'Raleway';
+}
+
+li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  font-size: 14px;
+}
+
+a {
+  color: #5c5c5c;
+  text-decoration: none
+}
+
+/* ヘッダー */
+header {
+  max-width: 800px;
+}
+
+.title h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* ナビゲーション */
+.nav_all {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #b3b3b3;
+}
+
+.nav_all ul {
+  padding: 0;
+}
+
+.nav_left {
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sm_nav {
+  display: none;
+}
+
+.pc_nav {
+  display: inline;
+}
+
+.nav_right {
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* セクション */
+section {
+  max-width: 800px;
+}
+
+.section {
+  display: flex;
+  margin-top: 50px;
+}
+
+/* カラム左設定 */
+.section_left {
+  width: 50%;
+  margin-left: 0;
+  text-align: center;
+}
+
+.section_left img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* カラム右設定 */
+.section_right {
+  width: 50%;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.section_right > h2 {
+  width: 100%;
+  border-top: solid 1px #b3b3b3;
+  border-bottom: solid 1px #b3b3b3;
+  margin: 0 ;
+  padding: 15px 0;
+  font-size: 15px;
+}
+
+.section_right > p {
+  width: 100%;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+/* 購入テーブル設定 */
+.select {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: #5a5a5a;
+  border-collapse: collapse;
+  border: none;
+}
+
+.select th,td {
+  font-weight: normal;
+  padding: 5px 20px;
+  border-left: 1px solid #b3b3b3;
+  border-top: 1px solid #b3b3b3;
+}
+
+.select th:first-child,td:first-child {
+  border-left: none;
+}
+
+.select th {
+  border-top: none;
+}
+
+.number {
+  width: 200px;
+}
+
+/* 購入ボタン設定 */
+.section_right button {
+  margin-top: 30px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  background-color: #646464;
+}
+
+.section_right button span {
+  width: 100%;
+  color: #fff;
+}
+
+/* サイズ一覧 */
+.list {
+  width: 100%;
+  margin: 0;
+  margin-top: 30px;
+  text-align: center;
+  color: #5a5a5a;
+  border-collapse: collapse;
+  border: 1px solid #b3b3b3;
+}
+
+.list_th,.list_td {
+  font-weight: normal;
+  padding: 5px 20px;
+  border-left: 1px solid #b3b3b3;
+}
+
+.list_th,.list_th:first-child,.list_td:first-child {
+  background-color: #cec9c9;
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* **************************スマホ用設定************************** */
+@media screen and (max-width: 896px) {
+
+  /* ナビゲーション */
+.nav_all {
+  display: inline;
+  text-align: center;
+  border-bottom: none;
+}
+
+.nav_left {
+  width: 100%;
+  margin-left: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.nav_left a {
+  width: 100%;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.nav_right {
+  width: 0%;
+  display: none;
+}
+
+.sm_nav {
+  display: inline;
+  font-size: 25px;
+}
+
+.pc_nav {
+  display: none;
+}
+
+.nav_right {
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* カラム左設定 */
+.section_left {
+  width: 100%;
+  margin: 0;
+}
+
+.section_left img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* カラム右設定 */
+.section_right {
+  width: 100%;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.section_right > h2 {
+  border-top: solid 1px #b3b3b3;
+  border-bottom: solid 1px #b3b3b3;
+  margin: 0 20px;
+  padding: 30px 0 30px 0;
+  font-size: 30px;
+}
+
+.section_right > p {
+  margin: 0 20px;
+  padding: 30px 0 30px 0;
+  font-size: 30px;
+}
+
+/* 購入テーブル設定 */
+.select {
+  width: 100%;
+  margin: 0 20px;
+  text-align: center;
+  color: #5a5a5a;
+  border-collapse: collapse;
+  border: none;
+  font-size: 30px;
+}
+
+.select th,td {
+  font-weight: normal;
+  padding: 5px 20px;
+  border-left: 1px solid #b3b3b3;
+  border-top: 1px solid #b3b3b3;
+}
+
+.select th:first-child,td:first-child {
+  border-left: none;
+}
+
+.select th {
+  border-top: none;
+}
+
+.number {
+  width: 300px;
+  font-size: 30px;
+}
+
+/* 購入ボタン設定 */
+.section_right button {
+  margin: 30px 20px 30px 20px;
+  border: none;
+  width: 100%;
+  height: 100px;
+  background-color: #646464;
+}
+
+.section_right button span {
+  width: 100%;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* サイズ一覧 */
+.list {
+  width: 100%;
+  margin: 30px 20px 30px 20px;
+  text-align: center;
+  color: #5a5a5a;
+  border-collapse: collapse;
+  border: 1px solid #b3b3b3;
+}
+
+.list_th,.list_td {
+  font-weight: normal;
+  padding: 20px 5px;
+  border-left: 1px solid #b3b3b3;
+  font-size: 30px;
+}
+
+.list_th,.list_th:first-child,.list_td:first-child {
+  background-color: #cec9c9;
+}
+
+}
