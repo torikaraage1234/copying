@@ -208,7 +208,7 @@ footer {
 
 .sm_nav {
   display: inline;
-  font-size: 25px;
+  font-size: max(15px);
 }
 
 .pc_nav {
